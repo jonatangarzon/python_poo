@@ -9,11 +9,11 @@ from coordenada import coordenada
 
 
 def mostrarvertises(self):
-      print("El cuadrado esta compuesto por los siguientes vertices:")
-      self.v1.mostrarcoordenada()
-      self.v2.mostrarcoordenada()
-      self.v3.mostrarcoordenada()
-      self.v4.mostrarcoordenada()
+    print("El cuadrado esta compuesto por los siguientes vertices:")
+    self.v1.mostrarcoordenada()
+    self.v2.mostrarcoordenada()
+    self.v3.mostrarcoordenada()
+    self.v4.mostrarcoordenada()
 
 def main():
     v1 = coordenada(1.1)
