@@ -77,3 +77,106 @@ def main():
 if__name__ == main():
    main()
 ```
+## composision 
+
+- consisste a la creasion de nuevas clases a partir de nuevas clases existentes que actuan como elementos compositores de la nueva
+- las clases existentes seran atrivutos de nuevas clases
+
+## ejemplo
+
+-una coordenada en 2 dimensiones esta compuesta por 2 valores, el valor en el eje de las x  y el valor en el eje de las y esto podria ser una clase
+- un cuadrado esta compuesto por 4 coordenadas que son ls 4 vertises. esto podria ser una clse que esta comuesta por 4 clases delobjeto coordenada 
+
+### codigo python
+
+```python
+class coordenada:
+   #metodo constructor
+   def__inif__(self,x,y):
+   self. y = y
+   def.mostrarcoordenada()
+   print("(",self.x,",",self.y,")")
+   class cuadrado
+   # metodo constructor 
+   def__init__(self,v1,v2,v3,v4)
+   self,v1 = v1
+   self,v2 = v2 
+   self,V3 = v3
+   self,v4 = v4
+
+   def mostrarvertises(self):
+      print("El cuadrado esta compuesto por los siguientes vertices:")
+      self.v1.mostrarcoordenada()
+      self.v2.mostrarcoordenada()
+      self.v3.mostrarcoordenada()
+      self.v4.mostrarcoordenada()
+
+      def main():
+         v1 = coordenada(1.1)
+         v2 = coordenada(1.4)
+         v3 = coordenada(4.4)
+         v4 = coordenada(4.1)
+```
+
+![alt text](8efaab51-99d1-40eb-ade3-cfef4eeb9ad9.jpg)
+
+
+## Encapsulació
+
+- uno de los objetivos que tiene la poo es protejer los datos de acceso o usos no controados y esto es lo que se comose como **encapsulació**
+- los datos(atrivutos) que componen una clase son de dos tipos:
+   - **públicos:** los datos son accesibles sin control es decir los datos son usados sin ningun tipo de mecanismos ante usos no autorisados o indebidos
+   - **privados:** los datos no pueden ser acsedidos sin control y para acceder a ellos se deveran inplementar un metodo que acceda a ellos. De esta manera los datos unicamente acccedidos a su proia clase
+- la encapsulacion tambien puederealisarse sobre los metodos 
+- la definición de atrivutos privados se realisan incluyendo los caracteres "__" (dos rallas de piso) entre la palabra **self** y el nombre del atributo.
+
+### ejemplo
+
+### codigo python
+
+```python
+class coordenada:
+   #metodo constructor
+   def__inif__(self,x,y):
+   self.__x = x
+   self,__Y = Y
+
+#metodos de acceso
+def getX(self):
+   return self.__X
+def setX(self,x):
+   self.__X = x
+def getY(self):
+   return self.__Y
+def getY(self,y):
+   self.__Y = y
+
+   def mostrarcoordenada(self):
+      print("(",self.__X",", self.__Y, ")")
+
+
+
+
+
+   def.mostrarcoordenada()
+   print("(",self.x,",",self.y,")")
+   class cuadrado
+   # metodo constructor 
+   def__init__(self,v1,v2,v3,v4)
+   self,v1 = v1
+   self,v2 = v2 
+   self,V3 = v3
+   self,v4 = v4
+
+   def mostrarvertises(self):
+      print("El cuadrado esta compuesto por los siguientes vertices:")
+      self.v1.mostrarcoordenada()
+      self.v2.mostrarcoordenada()
+      self.v3.mostrarcoordenada()
+      self.v4.mostrarcoordenada()
+
+      def main():
+         v1 = coordenada(1.1)
+         v2 = coordenada(1.4)
+         v3 = coordenada(4.4)
+         v4 = coordenada(4.1)
